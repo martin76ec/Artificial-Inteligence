@@ -2,13 +2,13 @@
 %Date: 2020-03-30
 %Exercises from book: MachineLearning Workout
 
-%Clean section
+# Clean section
 
 close all;
 clc; 
 clear; 
 
-%Practice
+# Practice
 
 load matricesPr1.mat;
 
@@ -36,20 +36,31 @@ for i = 1:size(A, 1)
   endfor  
 endfor
 
-clear i;
-clear j;
-
-
 %Lit 6
-%display(F(54, 374));
+printf("El valor de F(54, 374) es: ");
+display(F(54, 374));
 
-%Lit 7 
+%Lit 7 & 8 
 X_8 = myTriplicator(M, F);
 
-clear i;
-clear j;
+%Lit 9
+X_8sum = sum(X_8);
 
-%Lit 8
+%Lit 10 & 11
+X_11 = extractEquals(F, G);
+
+%Lit 12
+X_11sum = sum(X_11);
+
+%Lit 13
+X_11zeros = nnz(X_11);
+printf("\nLa de elementos que no son zero en X_11 es: \n");
+display(X_11zeros);
+
+
+
+
+
 
 
 
