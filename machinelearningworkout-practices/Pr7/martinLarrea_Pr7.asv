@@ -1,0 +1,15 @@
+%Clear section
+clear all;
+clc;
+
+%lit 2
+load matricesPr7.mat;
+
+%Lit 4
+X1 = [transpose(x1); transpose(x2); transpose(x3); transpose(x4)];
+
+%Lit 5
+yhat_X1 = myMcC_P(X1, [2;-1;3], 3);
+
+display yhat_X1
+
