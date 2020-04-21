@@ -6,10 +6,9 @@ function y4 = computeCPM(cM, index)
     fp = sum(y) - tp;
     fn = sum(x) - tp;
     tn = sum(sum(cM)) - tp - fp - fn;
-    fprintf('FOR CLASS INDEX', index);
-    fprintf('AS POSITIVE\n');
-    fprintf('s%d','True Positive: \n', tp);
-    fprintf('False Positive: \n', fp);
-    fprintf('False Negative: \n', fn);
-    fprintf('True Negative: \n', tn);
+    fprintf('%s%d%s\n','FOR CLASS INDEX ', index, ' AS POSITIVE');
+    fprintf('%s%d\n', 'True Positive: ',tp);
+    fprintf('%s%d\n', 'False posiive: ',fp);
+    fprintf('%s%d\n', 'False negative: ',fn);
+    fprintf('%s%d\n\n', 'True negative: ',tn);
 end
