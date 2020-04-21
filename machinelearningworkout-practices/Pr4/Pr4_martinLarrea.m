@@ -8,10 +8,12 @@ load matricesPr4.mat;
 %lit 4
 subplot(1, 2, 1);
 plotRegression(X, Y, Yhat1);
+title('Literal 4');
 
 %lit 5
 subplot(1, 2, 2);
 plotRegression(X, Y, Yhat2);
+title('Literal 5');
 
 %lit 7
 %a
