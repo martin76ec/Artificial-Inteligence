@@ -22,4 +22,15 @@ display(yhat_X);
 %Lit 8
 plotClasses_McC_P(X, y, yhat_X);
 
+%Lit 9
+mse_X = computeMSE(y, yhat_X);
+display(mse_X);
+
+%Lit 10
+cfm_X = confusionmat(y, yhat_X);
+display(cfm_X);
+
+%Lit 11
+computeCPM(cfm_X, 1);
+
 
